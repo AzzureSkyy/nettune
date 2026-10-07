@@ -2,6 +2,7 @@
 .NOTES
     Project   : nettune
     Author    : AzzureSkyy
+    Watermark : AzzureSkyy
     Source    : https://github.com/AzzureSkyy/nettune
     Copyright : (c) 2026 AzzureSkyy. All rights reserved. See LICENSE.
 #>
@@ -39,3 +40,4 @@ if ($adapter) {
 
 & "$env:SystemRoot\System32\powercfg.exe" /setacvalueindex SCHEME_CURRENT 19cac1f9-1c6d-4a8f-8b3f-4f0a3c8b0d1d 12bbebe6-58d6-4636-95bb-3217ef867c1a 0
 & "$env:SystemRoot\System32\powercfg.exe" /setactive SCHEME_CURRENT
+# AzzureSkyy

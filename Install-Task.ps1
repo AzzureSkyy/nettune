@@ -2,6 +2,7 @@
 .NOTES
     Project   : nettune
     Author    : AzzureSkyy
+    Watermark : AzzureSkyy
     Source    : https://github.com/AzzureSkyy/nettune
     Copyright : (c) 2026 AzzureSkyy. All rights reserved. See LICENSE.
 #>
@@ -13,3 +14,4 @@ $principal = New-ScheduledTaskPrincipal -UserId "SYSTEM" -RunLevel Highest
 Register-ScheduledTask -TaskName "NetTune-EnforceSettings" -Action $action -Trigger $t1,$t2,$t3 -Principal $principal -Force
 Start-ScheduledTask -TaskName "NetTune-EnforceSettings"
 Write-Host "Installed. Settings will be re-applied at startup, logon, and every 30 minutes."
+# AzzureSkyy

@@ -2,6 +2,7 @@
 .NOTES
     Project   : nettune
     Author    : AzzureSkyy
+    Watermark : AzzureSkyy
     Source    : https://github.com/AzzureSkyy/nettune
     Copyright : (c) 2026 AzzureSkyy. All rights reserved. See LICENSE.
 #>
@@ -12,3 +13,4 @@ $adapter = (Get-NetAdapter | Where-Object InterfaceDescription -like "*BE200*").
 Set-NetAdapterAdvancedProperty -Name $adapter -DisplayName "Preferred Band" -DisplayValue "4. Prefer 6GHz band" -NoRestart
 Get-NetAdapterAdvancedProperty -Name $adapter -DisplayName "Preferred Band" | Format-Table DisplayName, DisplayValue
 Stop-Transcript
+# AzzureSkyy
