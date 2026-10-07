@@ -1,3 +1,10 @@
+<#
+.NOTES
+    Project   : nettune
+    Author    : AzzureSkyy
+    Source    : https://github.com/AzzureSkyy/nettune
+    Copyright : (c) 2026 AzzureSkyy. All rights reserved. See LICENSE.
+#>
 $action  = New-ScheduledTaskAction -Execute "$env:SystemRoot\System32\WindowsPowerShell\v1.0\powershell.exe" -Argument '-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File "C:\NetTune\Apply-NetSettings.ps1"'
 $t1 = New-ScheduledTaskTrigger -AtStartup
 $t2 = New-ScheduledTaskTrigger -AtLogOn

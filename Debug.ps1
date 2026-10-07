@@ -1,3 +1,10 @@
+<#
+.NOTES
+    Project   : nettune
+    Author    : AzzureSkyy
+    Source    : https://github.com/AzzureSkyy/nettune
+    Copyright : (c) 2026 AzzureSkyy. All rights reserved. See LICENSE.
+#>
 Start-Transcript C:\NetTune\debug.log -Force
 Get-NetAdapter | Where-Object InterfaceDescription -like "*BE200*" | Format-Table Name, InterfaceDescription, Status -AutoSize
 Get-ScheduledTaskInfo NetTune-EnforceSettings | Format-List LastRunTime, LastTaskResult

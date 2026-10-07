@@ -1,3 +1,10 @@
+<#
+.NOTES
+    Project   : nettune
+    Author    : AzzureSkyy
+    Source    : https://github.com/AzzureSkyy/nettune
+    Copyright : (c) 2026 AzzureSkyy. All rights reserved. See LICENSE.
+#>
 $ErrorActionPreference = 'SilentlyContinue'
 $netsh = "$env:SystemRoot\System32\netsh.exe"
 $log = "C:\NetTune\apply.log"
